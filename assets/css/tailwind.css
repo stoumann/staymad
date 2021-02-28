@@ -1,0 +1,64 @@
+/* ./assets/css/tailwind.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: 'Inter', sans-serif;
+
+    @apply text-body;
+}
+
+h1, h2, h3, h4, h5 {
+    @apply font-logo text-secondary font-semibold tracking-wide;
+}
+
+h1 {
+    @apply text-3xl lg:text-5xl uppercase;
+}
+
+h2 {
+    @apply text-2xl lg:text-4xl;
+}
+
+h3 {
+    @apply text-xl lg:text-3xl;
+}
+
+h4 {
+    @apply text-lg lg:text-2xl;
+}
+
+h5 {
+    @apply text-base lg:text-lg;
+}
+
+
+li .link {
+    @apply text-white bg-white bg-opacity-0 p-1 px-2 rounded-lg font-light tracking-wider text-sm uppercase transition-all duration-300 hover:bg-opacity-20 border-2 border-opacity-0 border-white;
+}
+.contact-link {
+    @apply block rounded-full hover:rounded-tr-none font-light tracking-wider text-xs uppercase transition-all duration-500 text-center;
+}
+li .nuxt-link-exact-active {
+    @apply border-opacity-30;
+}
+.hero-container {
+    @apply h-500 lg:h-800;
+}
+.hero-character {
+    @apply absolute z-10 -bottom-3 2xl:w-screen xl:w-xl lg:w-lg md:w-md w-sm transform left-1/2 -translate-x-1/2 w-screen;
+}
+/* 
+label {
+    @apply font-semibold mb-1 uppercase text-gray-500 text-sm;
+} */
+
+.layout-enter-active,
+.layout-leave-active {
+    transition: opacity 0.2s;
+}
+.layout-enter,
+.layout-leave-active {
+    opacity: 0;
+}
