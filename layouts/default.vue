@@ -2,7 +2,7 @@
     <div class="min-h-screen w-full bg-white">
         <!-- HERO -->
         <div class="bg-gradient-to-r from-blue-600 to-primary">
-            <div class="w-full relative pt-48">
+            <div class="w-full relative pt-48 overflow-hidden">
                 <div class="absolute z-30 inset-x-0 top-0">
                     <Header />
                 </div>
@@ -25,6 +25,7 @@
     import Header from '~/components/Header.vue';
 
     export default {
+        name: 'default',
         components: {
             Header
         }

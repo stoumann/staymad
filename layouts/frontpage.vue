@@ -1,5 +1,5 @@
 <template>
-    <div class="min-h-screen w-full bg-white">
+    <div class="min-h-screen w-full bg-white overflow-hidden">
         <!-- HERO -->
         <div class="bg-gradient-to-r from-blue-600 to-primary">
             <div class="w-full relative pt-32 hero-container">
