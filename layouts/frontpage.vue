@@ -1,7 +1,14 @@
 <template>
     <div class="min-h-screen w-full bg-white overflow-hidden">
+        <div class="fixed inset-0 z-50 bg-gradient-to-tr from-blue-600 to-primary flex items-center justify-center flex-col h-full w-full text-white space-y-8">
+            <div class="text-white text-center text-5xl lg:text-7xl 2xl:text-8xl tracking-wider font-logo">
+                Vi er <b>STAY</b><span class="font-light">MAD</span>
+            </div>
+            <div class="px-12 lg:pb-10 text-center text-xs lg:text-base">Vi bygger din hjemmeside, skriver dine tekster, tager dine billeder, filmer din profilvideo og designer dit logo!</div>
+            <a class="contact-link bg-white text-body p-2 px-4 lg:p-4 lg:px-8" href="mailto:info@staymad.dk?subject=Jeg er nysgerrig!">Skriv til os for at høre mere</a>
+        </div>
         <!-- HERO -->
-        <div class="bg-gradient-to-r from-blue-600 to-primary">
+        <div class="bg-gradient-to-tr from-blue-600 to-primary">
             <div class="w-full relative pt-32 hero-container">
                 <div class="absolute z-30 inset-x-0 top-0">
                     <Header />
@@ -22,7 +29,7 @@
             </div>
         </div>
         <!-- <Header /> -->
-        <div class="bg-gradient-to-b from-white to-gray-100 min-h-screen">
+        <div class="bg-gradient-to-b from-white to-gray-100 min-h-full">
             <div class="mt-32">
                 <Nuxt />
             </div>

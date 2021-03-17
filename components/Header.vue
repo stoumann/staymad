@@ -1,6 +1,6 @@
 <template>
     <div class="container mx-auto mt-8 px-4 sm:px-0">
-        <div class="flex items-center justify-between">
+        <div class="flex items-center justify-between px-8">
             <div>
                 <n-link to="/"><Logo color="text-white" /></n-link>
             </div>
@@ -12,10 +12,10 @@
                 </button>
                 <div class="inset-x-0 top-20 fixed md:static px-4 md:px-0" v-if="isMenuOpen">
                     <ul class="list-none flex flex-col md:flex-row md:items-center p-4 md:p-0 m-0 space-y-4 md:space-y-0 md:space-x-4 bg-secondary md:bg-transparent w-full md:w-auto rounded-lg">
-                        <li><n-link class="link" to="/">Hjem</n-link></li>
-                        <li><n-link class="link" to="/services">Ydelser</n-link></li>
-                        <li><n-link class="link" to="/about">Om os</n-link></li>
-                        <li><n-link class="contact-link bg-white md:bg-secondary text-body md:text-white p-2 px-4 w-auto" to="/contact">Skal vi tales ved?</n-link></li>
+                        <li><n-link @click="menuState = false" class="link" to="/">Hjem</n-link></li>
+                        <li><n-link @click="menuState = false" class="link" to="/services">Ydelser</n-link></li>
+                        <li><n-link @click="menuState = false" class="link" to="/about">Om os</n-link></li>
+                        <li><n-link @click="menuState = false" class="contact-link bg-white md:bg-secondary text-body md:text-white p-2 px-4 w-auto" to="/contact">Skal vi tales ved?</n-link></li>
                     </ul>
                 </div>
             </div>
@@ -50,7 +50,7 @@
             handleResize() {
                 this.window.width = window.innerWidth;
                 this.window.height = window.innerHeight;
-            }
+            },
         },
         computed: {
             isMenuOpen () {
